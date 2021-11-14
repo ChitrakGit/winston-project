@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 
 dotenv.config({path: './.env'})
 let logger = null;
-console.log(process.env.NODE_ENV)
+console.log("Project ENV: ",process.env.NODE_ENV)
 if (String(process.env.NODE_ENV).toLowerCase() == 'production') {
     logger = productionLogger();
   }else{
